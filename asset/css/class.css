@@ -63,13 +63,21 @@
     justify-content: space-evenly;
 }
 
-#header .left .route span{
+#header .left .route a{
     letter-spacing: .01785714em;
     font-family: 'Google Sans',Roboto,Arial,sans-serif;
     font-size: 0.875rem;
     line-height: 1.25rem;
     color: #3c4043;
     text-transform: none;
+    text-decoration: none;
+}
+
+#header .left .route a:hover{
+    font-size: 18px;
+    line-height: 1.25rem;
+    font-family: 'Google Sans',Roboto,Arial,sans-serif;
+    color: #4285f4;
 }
 
 #header .right{
