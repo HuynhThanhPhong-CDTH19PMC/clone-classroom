@@ -8,9 +8,8 @@
     margin-top: 15px;
 }
 
-
-#cotainer{
-    
+#container{
+    z-index: 0;
 }
 
 #header{
@@ -18,6 +17,10 @@
     height: 65px;
     display: flex;
     justify-content: space-between;
+    position: fixed;
+    z-index: 1;
+    background-color: #fff;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2), 0 2px 5px 0 rgba(0, 0, 0, 0.19);
 }
 
 #header .left , 
@@ -56,7 +59,16 @@
 }
 
 #body{
- 
+
+}
+
+#line{
+    padding-top: 65px;
+}
+
+#line hr{
+    margin-top: 0px;
+    margin-bottom: 0px;
 }
 
 #body .top{
@@ -88,7 +100,6 @@
 
 #body .content{
     margin: 10px 25px;
-
 }
 
 #body .content .left{
@@ -105,6 +116,16 @@
     position: relative;
     align-items: flex-start;
 }
+
+#body .content .col-md-3 .card{
+    margin-bottom: 12px;
+}
+
+#body .content .col-md-3 :hover {
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2), 0 2px 5px 0 rgba(0, 0, 0, 0.19);
+    cursor: pointer;
+}
+
 
 #body .content .card .card-header a{
     color: white;

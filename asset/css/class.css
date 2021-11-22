@@ -8,6 +8,13 @@
     height: 65px;
     display: flex;
     justify-content: space-between;
+    position: fixed;
+    z-index: 1;
+    right: 0px;
+    left: 0px;
+    top:0px;
+    background-color: #fff;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2), 0 2px 5px 0 rgba(0, 0, 0, 0.19);
 }
 
 #header .left{
@@ -35,7 +42,9 @@
     font-size: 1rem;
     font-weight: 500;
     line-height: 1.5rem;
+    font-weight: bold;
     color: #3c4043;
+    
 }
 
 #header .left .title .sub-title{
@@ -80,6 +89,11 @@
 #header .right .menu i,
 #header .right .account i{
     font-size: 20px;
+}
+
+#container{
+    margin-top: 95px;
+    z-index: 0;
 }
 
 #body{
@@ -230,7 +244,7 @@
     display: flex;
     padding: 1rem;
     border-radius: 1em; 
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2), 0 2px 5px 0 rgba(0, 0, 0, 0.19);
     background-color: #fff;
 }
 
