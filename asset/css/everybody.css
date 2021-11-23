@@ -22,6 +22,10 @@
     align-items: center;
 }
 
+#header .left .drawer:hover{
+    cursor: pointer;
+}
+
 #header .left .drawer{
     margin-left: 25px;
     margin-right: 22px;
@@ -99,9 +103,112 @@
     font-size: 20px;
 }
 
+/* Drawer details */
+.dra-details.open{
+    display: block;
+}
+
+.dra-details{
+    width: 300px;
+    height: 100%;
+    background-color:#fff;
+    position: fixed;
+    z-index: 2;
+    overflow-y: scroll;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.4);
+    display: none;
+    animation: drawerFaceIn ease 0.5s;
+}
+
+.dra-details hr{
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.dra-details .dra-header{
+    height: auto;
+    margin: 8px 8px 8px 0px;
+}
+
+.dra-details .dra-item:hover{
+    background-color: #f6f6f6;
+    border-radius: 1rem;
+    cursor: pointer;
+}
+
+.dra-details .dra-item a{
+    color: #5f6368;
+    text-decoration: none;
+}
+
+.dra-details .dra-item{
+    width: 100%;
+    height: 56px;
+    display: flex;
+    align-items: center;
+    padding:  0px 26px;
+    font-size: 16px;
+}
+
+.dra-details .dra-item .icon{
+    color: #5f6368  ;
+    margin-right: 16px;
+    font-size: 18px;
+}
+
+.dra-details .dra-item .dra-item-avt{
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background-color: #1967d2;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.dra-details .dra-body{
+    width: 100%;
+    height: auto;
+    margin: 8px 8px 8px 0px;
+}
+
+.dra-details .dra-body .dra-body-title{
+    display: flex;
+    align-items: center;
+    height: 40px;
+    margin-left: 16px;
+    letter-spacing: .01785714em;
+    font-family: 'Google Sans',Roboto,Arial,sans-serif;
+    font-size: 0.875rem;
+    font-weight: bold;
+    line-height: 1.25rem;
+    color: #5f6368;
+}
+
+.dra-details .dra-footer{
+    width: 100%;
+    height: auto;
+    margin: 8px 8px 8px 0px;
+}
+
+@keyframes drawerFaceIn{
+    from {
+        opacity: 0;
+        transform: translateX(-200px);
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+/* End Drawer details */
+
 /* Container */
 #container{
-    margin: 95px 250px;
+    padding-top: 95px;
+    margin: 0px 250px;
     width: auto;
     height: auto;
     /* background-color: #ccc; */
